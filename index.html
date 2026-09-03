@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johana & Nathan | Nuestra Historia</title>
+
+    <!-- PRECONEXIÓN RÁPIDA A FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+    <header class="barra">
+        <div class="logo-contenedor">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" 
+                 alt="Netflix Logo" 
+                 class="logo-netflix-top"
+                 width="100" height="30" decoding="async">
+            <span class="nombres-header"><span class="corazon-header"></span></span>
+        </div>
+        <span class="perfil">17</span>
+    </header>
+
+    <!-- PORTADA -->
+    <main id="inicio" class="pantalla inicio">
+        <div class="inicio-fondo"></div>
+        <div class="inicio-contenido">
+            <p class="mini-titulo">UNA HISTORIA ORIGINAL</p>
+            <h1>Johana</h1>
+            <div class="corazon">❤️</div>
+            <p class="subtitulo">Una historia que todavía estamos escribiendo...</p>
+            <p class="fecha">DESDE EL 17 · 10 · 2025</p>
+            <button id="comenzar" class="boton-principal">► VER HISTORIA</button>
+            <p class="toque">Toca para comenzar nuestra historia</p>
+        </div>
+    </main>
+
+    <!-- CATÁLOGO -->
+    <main id="catalogo" class="oculto">
+        <header class="barra">
+            <div>
+                <span class="logo">N</span>
+                <strong>Johana ❤️ Nathan</strong>
+            </div>
+            <span class="perfil">♥</span>
+        </header>
+
+        <!-- DESTACADO -->
+        <section class="hero">
+            <div class="hero-contenido">
+                <p class="etiqueta">❤️ NUESTRA HISTORIA</p>
+                <h1>Una historia<br>para recordar</h1>
+                <p class="hero-texto">
+                    Dos personas. Un encuentro.<br>
+                    Y muchos capítulos todavía por escribir.
+                </p>
+                <div class="hero-botones">
+                    <button id="verHistoria" class="boton-blanco">▶ VER HISTORIA</button>
+                    <button id="sorpresaHero" class="boton-info">ⓘ</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAPÍTULOS -->
+        <section class="categoria">
+            <h2>🎬 Capítulos</h2>
+            <div class="fila">
+                <article class="tarjeta tarjeta-capitulo" data-capitulo="1">
+                    <div class="foto-capitulo-miniatura">
+                        <img src="fotos/capitulo01.jpg" alt="Capítulo 1" fetchpriority="high" decoding="async">
+                        <span class="badge-numero">01</span>
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3>El comienzo</h3>
+                        <p>17 · 10 · 2025</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta tarjeta-capitulo" data-capitulo="2">
+                    <div class="foto-capitulo-miniatura">
+                        <img src="fotos/capitulo02.jpg" alt="Capítulo 2" loading="lazy" decoding="async">
+                        <span class="badge-numero">02</span>
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3>Los primeros momentos</h3>
+                        <p>Una nueva historia</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta tarjeta-capitulo" data-capitulo="3">
+                    <div class="foto-capitulo-miniatura">
+                        <img src="fotos/capitulo03.jpg" alt="Capítulo 3" loading="lazy" decoding="async">
+                        <span class="badge-numero">03</span>
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3>Continuará...</h3>
+                        <p>Nuestra historia</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FOTOS -->
+        <section class="categoria">
+            <h2>📸 Nuestros recuerdos</h2>
+            <div class="fila">
+                <article class="tarjeta recuerdo" data-foto="1">
+                    <div class="foto">
+                        <img src="fotos/foto01.jpg" alt="Recuerdo 01" loading="lazy" decoding="async">
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3>Nuestro comienzo</h3>
+                        <p>Un recuerdo especial</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta recuerdo" data-foto="2">
+                    <div class="foto">
+                        <img src="fotos/foto02.jpg" alt="Recuerdo 02" loading="lazy" decoding="async">
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3>Un momento juntos</h3>
+                        <p>Un recuerdo especial</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta recuerdo" data-foto="3">
+                    <div class="foto">
+                        <img src="fotos/foto03.jpg" alt="Recuerdo 03" loading="lazy" decoding="async">
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3>Una sonrisa</h3>
+                        <p>Un recuerdo especial</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta recuerdo" data-foto="4">
+                    <div class="foto">
+                        <img src="fotos/foto04.jpg" alt="Recuerdo 04" loading="lazy" decoding="async">
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3>Otro recuerdo</h3>
+                        <p>Un momento para recordar</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta recuerdo" data-foto="5">
+                    <div class="foto">
+                        <img src="fotos/foto05.jpg" alt="Recuerdo 05" loading="lazy" decoding="async">
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3>Un día especial</h3>
+                        <p>Un recuerdo especial</p>
+                    </div>
+                </article>
+
+                <article class="tarjeta recuerdo" data-foto="6">
+                    <div class="foto">
+                        <img src="fotos/foto06.jpg" alt="Recuerdo 06" loading="lazy" decoding="async">
+                    </div>
+                    <div class="tarjeta-info">
+                        <h3>Para recordar</h3>
+                        <p>Un recuerdo especial</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PARA TI -->
+        <section class="mensaje">
+            <p class="etiqueta">PARA TI</p>
+            <h2>Johana ❤️</h2>
+            <p>Gracias por formar parte de mi historia.</p>
+            <button id="sorpresa" class="boton-principal">🎁 TENGO UNA SORPRESA</button>
+        </section>
+
+        <footer>
+            Hecho con ❤️ para Johana
+        </footer>
+    </main>
+
+    <!-- PANTALLA HISTORIA -->
+    <main id="historia" class="pantalla historia oculto">
+        <div class="historia-fondo"></div>
+        <div class="historia-contenido">
+            <p class="etiqueta">UNA HISTORIA ORIGINAL</p>
+            <h1>Johana<br><span>&</span><br>Nathan</h1>
+            <p>Todo comenzó el <strong>17 de octubre de 2025.</strong></p>
+            <p>Y desde entonces, cada momento se convirtió en parte de nuestra historia.</p>
+            <button id="capitulo1" class="boton-principal">▶ CAPÍTULO 1</button>
+            <button id="volver" class="boton-volver">← VOLVER</button>
+        </div>
+    </main>
+
+    <!-- CAPÍTULO 1 -->
+    <main id="capitulo1pantalla" class="pantalla capitulo oculto">
+        <div class="capitulo-fondo"></div>
+        <div class="capitulo-contenido">
+            <p class="numero-capitulo">CAPÍTULO 01</p>
+            <h1>El comienzo</h1>
+            <p class="fecha-capitulo">17 · 10 · 2025</p>
+            <div class="linea"></div>
+            <div class="capitulo-foto">
+                <img src="fotos/capitulo01.jpg" alt="Capítulo 1" loading="lazy" decoding="async">
+            </div>
+            <p class="texto-capitulo">
+                Hay historias que comienzan con algo extraordinario.<br><br>
+                Y hay otras que comienzan de la manera más sencilla...<br><br>
+                Pero con el tiempo terminan convirtiéndose en algo que jamás queremos olvidar.<br><br>
+                <strong>Esta es la nuestra.</strong>
+            </p>
+            <button id="siguienteCapitulo" class="boton-principal">CONTINUAR →</button>
+            <button id="volverHistoria" class="boton-volver">← VOLVER</button>
+        </div>
+    </main>
+
+    <!-- CAPÍTULO 2 -->
+    <main id="capitulo2" class="pantalla capitulo oculto">
+        <div class="capitulo-fondo fondo-diferente"></div>
+        <div class="capitulo-contenido">
+            <p class="numero-capitulo">CAPÍTULO 02</p>
+            <h1>Los primeros momentos</h1>
+            <div class="linea"></div>
+            <div class="capitulo-foto">
+                <img src="fotos/capitulo02.jpg" alt="Capítulo 2" loading="lazy" decoding="async">
+            </div>
+            <p class="texto-capitulo">
+                Cada momento comenzó a tener un significado diferente.<br><br>
+                Pequeños recuerdos que, sin darnos cuenta, comenzaron a convertirse en nuestra historia.
+            </p>
+            <button id="siguienteCapitulo2" class="boton-principal">CONTINUAR →</button>
+            <button id="volverCapitulo1" class="boton-volver">← VOLVER</button>
+        </div>
+    </main>
+
+    <!-- CAPÍTULO 3 -->
+    <main id="capitulo3" class="pantalla capitulo oculto">
+        <div class="capitulo-fondo fondo-tercero"></div>
+        <div class="capitulo-contenido">
+            <p class="numero-capitulo">CAPÍTULO 03</p>
+            <h1>Continuará...</h1>
+            <div class="linea"></div>
+            <div class="capitulo-foto">
+                <img src="fotos/capitulo03.jpg" alt="Capítulo 3" loading="lazy" decoding="async">
+            </div>
+            <p class="texto-capitulo">
+                Nuestra historia todavía no termina.<br><br>
+                Todavía quedan lugares por conocer, momentos por vivir, fotografías por tomar...<br><br>
+                y muchos capítulos por escribir.<br><br>
+                <strong>Esto recién comienza. ❤️</strong>
+            </p>
+            <button id="final" class="boton-principal">❤️ PARA TI</button>
+            <button id="volverCapitulo2" class="boton-volver">← VOLVER</button>
+        </div>
+    </main>
+
+    <!-- RECUERDO INDIVIDUAL -->
+    <main id="recuerdoPantalla" class="pantalla recuerdo-pantalla oculto">
+        <div class="recuerdo-fondo"></div>
+        <div class="recuerdo-contenido">
+            <p id="recuerdoNumero" class="numero-capitulo">RECUERDO 01</p>
+            <div class="foto-recuerdo">
+                <img id="recuerdoImagen" src="" alt="Nuestro recuerdo" decoding="async">
+            </div>
+            <h1 id="recuerdoTitulo">Nuestro comienzo</h1>
+            <div class="linea"></div>
+            <p id="recuerdoTexto">Un recuerdo especial de nuestra historia.</p>
+            <button id="volverRecuerdos" class="boton-volver">← VOLVER A RECUERDOS</button>
+        </div>
+    </main>
+
+    <!-- FINAL -->
+    <main id="finalpantalla" class="pantalla final oculto">
+        <div class="final-fondo"></div>
+        <div class="final-contenido">
+            <p class="etiqueta">PARA LA PERSONA QUE AMO</p>
+            <h1>Johana ❤️</h1>
+            <div class="corazones">❤️ ❤️ ❤️</div>
+            <p>
+                Si pudiera volver al 17 de octubre de 2025,
+                elegiría comenzar nuestra historia una vez más.
+            </p>
+            <p>Gracias por cada sonrisa, cada momento y cada recuerdo.</p>
+            <p class="especial">Te amo.</p>
+            <button id="volverInicio" class="boton-volver">↻ VOLVER AL INICIO</button>
+        </div>
+    </main>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal oculto">
+        <div class="modal-contenido">
+            <button id="cerrarModal" class="cerrar">&times;</button>
+            <div class="modal-corazon">❤️</div>
+            <h2>Johana...</h2>
+            <p>Hay algo que quiero que recuerdes:</p>
+            <p class="frase">"De todas las historias, la nuestra es mi favorita."</p>
+            <p>❤️ Nathan</p>
+        </div>
+    </div>
+
+    <!-- MÚSICA DE FONDO (preload="none" evita descargar el audio hasta que le den play) -->
+    <button id="musica" class="boton-musica">♫</button>
+    <audio id="audio" loop preload="none">
+        <source src="musica/nuestra-cancion.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
